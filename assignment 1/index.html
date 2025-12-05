@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mainDiv" class="main-div">
+        <h1>About Your Phone</h1>
+        <label for="select-brand">Brand:</label>
+        <br>
+        <select id="select-brand" onchange="brandSelection()">
+            <option value="" id="placeHolder" selected disabled>Select Brand</option>
+            <option value="iphone">iPhone</option>
+            <option value="xiomi">Xiomi</option>
+            <option value="samsung">Samsung</option>
+        </select>
+
+        <br><br>
+
+        <label for="select-model">Model:</label>
+        <br><br>
+        <select id="select-model" disabled>
+        </select>
+        <br>
+        <button class="btn" onclick="modelData()">Search</button>
+
+
+    </div>
+    <br>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
